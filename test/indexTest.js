@@ -7,9 +7,7 @@
 // +----------------------------------------------------------------------
 
 import test from 'ava';
-import lib3 from '../src/index';
-
-const value = lib3();
+import countdown from '../src/index';
 
 test('test lib3 output success', (t) => {
     t.pass();
