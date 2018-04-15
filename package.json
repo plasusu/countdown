@@ -24,7 +24,7 @@
     "eslint:fix": "node_modules/.bin/eslint src test --fix",
     "test": "node_modules/.bin/ava test/*.js",
     "test:coverage": "node_modules/.bin/nyc npm run test",
-    "test:report": "node_modules/.bin/nyc report --reporter=text-summary"
+    "test:report": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "dependencies": {},
   "devDependencies": {
@@ -38,6 +38,7 @@
     "babel-preset-es2015": "6.24.0",
     "babel-runtime": "6.9.2",
     "browser-env": "3.2.4",
+    "coveralls": "^3.0.0",
     "css-loader": "0.28.0",
     "http-server": "0.9.0",
     "json-loader": "0.5.4",
