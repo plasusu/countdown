@@ -23,7 +23,7 @@
     "eslint:fix": "node_modules/.bin/eslint src test --fix",
     "test": "node_modules/.bin/ava test/*.js",
     "test:coverage": "node_modules/.bin/nyc npm run test",
-    "test:report": "node_modules/.bin/nyc report --reporter=text-summary",
+    "test:report": "node_modules/.bin/nyc report --reporter=text-summary"
   },
   "dependencies": {},
   "devDependencies": {
