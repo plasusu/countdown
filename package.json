@@ -1,6 +1,6 @@
 {
   "name": "light-countdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/plasusu/countdown.git"
@@ -13,6 +13,7 @@
   "main": "index.js",
   "jsnext:main": "src/index.js",
   "author": "plasusu",
+  "license": "MIT",
   "scripts": {
     "env": "npm install && npm update",
     "build": "node build.js",
