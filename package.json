@@ -27,7 +27,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fe-base/eslint-config": "^0.2.1",
     "ava": "^0.24.0",
     "babel-core": "6.24.0",
     "babel-eslint": "^8.2.1",
