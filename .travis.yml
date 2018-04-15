@@ -1,0 +1,16 @@
+stages:
+  - test
+
+before_script:
+  - npm install
+
+test:
+  stage: test
+  script:
+    - npm run test
+  except:
+      - /^(doc|dev)/
+
+after_script:
+  - npm run test:coverage
+  - npm run test:report
