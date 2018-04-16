@@ -1,6 +1,6 @@
 {
   "name": "light-countdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/plasusu/countdown.git"
@@ -20,8 +20,6 @@
     "dev": "webpack --progress --colors --watch",
     "server": "http-server -p 80",
     "example": "webpack --config ./example/webpack.ui.config.js --progress --colors --watch",
-    "eslint": "node_modules/.bin/eslint src test",
-    "eslint:fix": "node_modules/.bin/eslint src test --fix",
     "test": "node_modules/.bin/ava test/*.js",
     "test:coverage": "node_modules/.bin/nyc npm run test",
     "test:report": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
