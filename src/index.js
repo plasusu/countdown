@@ -53,6 +53,7 @@ class Countdown {
         this.distance = this.timeEnd - this.currentTime;
         this.unit = 100;
         this.view = null;
+        this.timer = null;
     }
 
     init() {
@@ -86,8 +87,8 @@ class Countdown {
         document.querySelector(this.selector).innerHTML = displayMsg;
     }
     overTime() {
-        this.afterCount();
         window.clearInterval(this.timer);
+        this.afterCount();
     }
     runTimer() {
         const {unit} = this;
@@ -103,5 +104,6 @@ class Countdown {
 }
 
 export default (conf) => {
-    new Countdown(conf).init();
+    new Countdown(conf || {}).init();
 };
+
