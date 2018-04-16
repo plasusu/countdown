@@ -7,11 +7,10 @@
 
 _ _ _
 
-
 + [安装](#安装)
 + [用法](#用法)
 + [文档](#文档)
-    + [countdown](###countdown)
+    + [countdown](#countdown)
 + [LICENSE](#LICENSE)
 
 _ _ _
